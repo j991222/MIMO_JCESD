@@ -1,0 +1,8 @@
+
+ f=0, tau=0, Doppler=120, noise=-10dB, BER = &0.317252 ,BLER = & 0.999 H=old_EVA, ts_epk=epoch28, model=May26-v1-1750, now=2022-08-16-10:14:40
+ f=0, tau=0, Doppler=120, noise= -5dB, BER = &0.165631 ,BLER = & 0.084 H=old_EVA, ts_epk=epoch28, model=May26-v1-1750, now=2022-08-16-10:15:20
+ f=0, tau=0, Doppler=120, noise=  0dB, BER = &0.045345 ,BLER = & 0.000 H=old_EVA, ts_epk=epoch28, model=May26-v1-1750, now=2022-08-16-10:15:59
+ f=0, tau=0, Doppler=120, noise= 10dB, BER = &0.000230 ,BLER = & 0.000 H=old_EVA, ts_epk=epoch28, model=May26-v1-1750, now=2022-08-16-10:16:40
+ f=0, tau=0, Doppler=120, noise= 20dB, BER = &0.000011 ,BLER = & 0.000 H=old_EVA, ts_epk=epoch28, model=May26-v1-1750, now=2022-08-16-10:17:20
+ f=0, tau=0, Doppler=120, noise= 30dB, BER = &0.000009 ,BLER = & 0.000 H=old_EVA, ts_epk=epoch28, model=May26-v1-1750, now=2022-08-16-10:18:00
+ f=0, tau=0, Doppler=120, noise= 20dB, BER = &1.144928e-05 ,BLER = & 0.000000e+00 H=old_EVA, ts_epk=epoch28, model=May26-v1-1750, now=2023-03-03-22:42:10

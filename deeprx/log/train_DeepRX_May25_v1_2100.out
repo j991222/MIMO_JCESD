@@ -1,0 +1,2147 @@
+[*] Info: Wed May 25 21:05:16 2022
+[*] Info: head_mimo.py
+[***train.py***]------------------------------------------->Num. of Param Block = 186
+********************************************************************************
+
+******# Trainable param.= tensor(1233088.)
+DeepRxNew(
+  (conv1): Conv2d(18, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+  (rs1): ResBlock(
+    (rs1): Sequential(
+      (0): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (1): ReLU()
+      (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=64)
+      (3): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+      (4): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+      (5): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (6): ReLU()
+      (7): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=64)
+      (8): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+      (9): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (rs2): ResBlock(
+    (rs1): Sequential(
+      (0): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (1): ReLU()
+      (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=64)
+      (3): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+      (4): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+      (5): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (6): ReLU()
+      (7): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=64)
+      (8): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+      (9): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (rs3): UpsResBlock(
+    (conv): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1))
+    (rs1): Sequential(
+      (0): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (1): ReLU()
+      (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(2, 3), dilation=(2, 3), groups=64)
+      (3): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1))
+      (4): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+      (5): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (6): ReLU()
+      (7): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(2, 3), dilation=(2, 3), groups=128)
+      (8): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+      (9): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (rs4): ResBlock(
+    (rs1): Sequential(
+      (0): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (1): ReLU()
+      (2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(2, 3), dilation=(2, 3), groups=128)
+      (3): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+      (4): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+      (5): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (6): ReLU()
+      (7): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(2, 3), dilation=(2, 3), groups=128)
+      (8): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+      (9): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (rs5): UpsResBlock(
+    (conv): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1))
+    (rs1): Sequential(
+      (0): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (1): ReLU()
+      (2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(2, 3), dilation=(2, 3), groups=128)
+      (3): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1))
+      (4): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+      (5): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (6): ReLU()
+      (7): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 3), dilation=(2, 3), groups=256)
+      (8): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+      (9): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (rs6): ResBlock(
+    (rs1): Sequential(
+      (0): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (1): ReLU()
+      (2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(3, 6), dilation=(3, 6), groups=256)
+      (3): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+      (4): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+      (5): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (6): ReLU()
+      (7): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(3, 6), dilation=(3, 6), groups=256)
+      (8): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+      (9): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (rs7): ResBlock(
+    (rs1): Sequential(
+      (0): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (1): ReLU()
+      (2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 3), dilation=(2, 3), groups=256)
+      (3): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+      (4): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+      (5): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (6): ReLU()
+      (7): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 3), dilation=(2, 3), groups=256)
+      (8): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+      (9): Conv2d(256, 256, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (rs8): DspResBlock(
+    (conv): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1))
+    (rs1): Sequential(
+      (0): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (1): ReLU()
+      (2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(2, 3), dilation=(2, 3), groups=128)
+      (3): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1))
+      (4): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+      (5): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (6): ReLU()
+      (7): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(2, 3), dilation=(2, 3), groups=128)
+      (8): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+      (9): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (rs9): ResBlock(
+    (rs1): Sequential(
+      (0): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (1): ReLU()
+      (2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(2, 3), dilation=(2, 3), groups=128)
+      (3): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+      (4): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+      (5): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (6): ReLU()
+      (7): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(2, 3), dilation=(2, 3), groups=128)
+      (8): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+      (9): Conv2d(128, 128, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (rs10): DspResBlock(
+    (conv): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+    (rs1): Sequential(
+      (0): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (1): ReLU()
+      (2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=64)
+      (3): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1))
+      (4): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+      (5): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (6): ReLU()
+      (7): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=64)
+      (8): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+      (9): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (rs11): ResBlock(
+    (rs1): Sequential(
+      (0): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (1): ReLU()
+      (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=64)
+      (3): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+      (4): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+      (5): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (6): ReLU()
+      (7): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=64)
+      (8): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+      (9): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1))
+    )
+  )
+  (conv_end): Conv2d(64, 2, kernel_size=(1, 1), stride=(1, 1), bias=False)
+)
+Total parameters:  1233088
+training phase: lr= 0.001
+parser: ArgumentParser(prog='main.py', usage=None, description='MIMO', formatter_class=<class 'argparse.HelpFormatter'>, conflict_handler='error', add_help=True)
+log: True
+phase: train
+resume_epoch: epoch19
+test_epoch: epoch2
+resume: False
+gpu_idx: 0
+parallel: False
+suffix: May25-v1-2100
+data_mode: EVA
+optimizer: Adam
+epoch: 100
+fcn_chan: 32
+tr_batch: 300
+ts_batch: 100
+layers: 24
+deep: 17
+lr: 0.001
+lr_scheduler: StepLR
+save_freq: 5
+shuffle: True
+disp: 500
+deepcnn: 64
+noise: 0.0
+doppler: 90
+ts_doppler: 90
+dB: 30
+ts_snr: 0
+save_epoch: 100
+fcn1_chan: 3
+fcn2_chan: 3
+fcn_depth: 3
+shuff: 100
+cew: 1.0
+wdk: 0.0
+wXloss: 0.001
+wBCE: 0.001
+wCE: 0.001
+wH: 0.0
+wHX: 1
+dpr: 0.1
+label_noise: 0.01
+data_noise: 0.01
+inter_H: [256, 256]
+inter_X: [256, 256]
+inter_X2: [256, 256]
+laam: 0.1
+data_len: 30
+print_net: True
+info: May25-v1-2100
+img_dir: result/May25-v1-2100/img/
+ckp_dir: result/May25-v1-2100/ckp/
+tr_dir: train_data_path
+vl_dir: validation_data_path
+
+
+Phase: load valid data
+
+phase= valid
+Load valid data: db=  0, Doppler=90, NumSample=25000, tr_percent=0.2
+Load data time cost=3.3293, train dataset len=5000
+New EVA testset len= 5000
+
+Phase: load train data
+Load train data: db= 30, Doppler=90, NumSample=125000, tr_percent=1.0
+Load data time cost=15.2215, train dataset len=125000
+Load train data: db= 20, Doppler=90, NumSample=125000, tr_percent=1.0
+Load data time cost=15.1325, train dataset len=125000
+Load train data: db= 10, Doppler=90, NumSample=125000, tr_percent=1.0
+Load data time cost=14.8796, train dataset len=125000
+Load train data: db=  0, Doppler=90, NumSample=125000, tr_percent=1.0
+Load data time cost=14.7565, train dataset len=125000
+Load train data: db= -5, Doppler=90, NumSample=125000, tr_percent=1.0
+Load data time cost=14.7283, train dataset len=125000
+Load train data: db=-10, Doppler=90, NumSample=125000, tr_percent=1.0
+Load data time cost=15.6932, train dataset len=125000
+Training set len= 750000
+
+Phase: load test data
+
+phase= test
+
+
+
+phase= test
+Load test data: db=  0, Doppler=90, NumSample=125000, tr_percent=0.01
+Load data time cost=6.9707, train dataset len=1250
+Received_Y.shape= torch.Size([1250, 8, 12, 24])
+Transmit_X.shape= torch.Size([1250, 2, 12, 24])
+Hls.shape= torch.Size([1250, 8, 12, 24])
+Ideal_X.shape= torch.Size([1250, 2, 12, 24])
+Ideal_H.shape= torch.Size([1250, 12, 24, 4, 2])
+sig_list.shape= torch.Size([1250, 1, 1])
+dop_list.shape= torch.Size([1250, 1, 1])
+Old EVA testset len= 1250
+Phase: valid *******************
+Valid old EVA, BER=0.502541, snr=0, dop=90.0
+Start training ********************************************************************************
+Epoch: start 0 --> current/total=0/100
+Train: step=500, BER=0.044330, CE loss=0.3707
+Epoch 0 --> 0/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.221648, L_CE=0.370678, Now=21:09:16
+Train: step=1000, BER=0.072242, CE loss=0.3114
+Epoch 0 --> 0/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.180606, L_CE=0.311367, Now=21:11:07
+Train: step=1500, BER=0.099024, CE loss=0.2882
+Epoch 0 --> 0/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.165040, L_CE=0.288152, Now=21:12:59
+Train: step=2000, BER=0.124232, CE loss=0.2733
+Epoch 0 --> 0/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.155290, L_CE=0.273308, Now=21:14:50
+Train: step=2500, BER=0.147133, CE loss=0.2610
+Epoch 0 --> 0/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.147133, L_CE=0.260969, Now=21:16:42
+Epoch 0, time/epoch = 561.87, epoch_loss = 0.000870
+Phase: valid Old EVA *******************
+Epoch 0, old EVA, BER=0.072949, epoch_loss = 0.166241
+Phase: valid new EVA *******************
+Epoch 0, New EVA, BER=0.088951, epoch_loss = 0.198467
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.072949, 	0.088951, 	0.166241, 	0.198467
+Epoch: start 0 --> current/total=1/100
+Train: step=3000, BER=0.060645, CE loss=0.8034
+Epoch 0 --> 1/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.303223, L_CE=0.803446, Now=21:18:53
+Train: step=3500, BER=0.089811, CE loss=0.5367
+Epoch 0 --> 1/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.224527, L_CE=0.536688, Now=21:20:48
+Train: step=4000, BER=0.115163, CE loss=0.4365
+Epoch 0 --> 1/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.191939, L_CE=0.436485, Now=21:22:44
+Train: step=4500, BER=0.139476, CE loss=0.3839
+Epoch 0 --> 1/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.174345, L_CE=0.383872, Now=21:24:39
+Train: step=5000, BER=0.163334, CE loss=0.3514
+Epoch 0 --> 1/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.163334, L_CE=0.351358, Now=21:26:35
+Epoch 1, time/epoch = 583.18, epoch_loss = 0.001171
+Phase: valid Old EVA *******************
+Epoch 1, old EVA, BER=0.088000, epoch_loss = 0.196399
+Phase: valid new EVA *******************
+Epoch 1, New EVA, BER=0.103797, epoch_loss = 0.230485
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.088000, 	0.103797, 	0.196399, 	0.230485
+Epoch: start 0 --> current/total=2/100
+Train: step=5500, BER=0.023633, CE loss=0.2187
+Epoch 0 --> 2/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.118167, L_CE=0.218735, Now=21:28:40
+Train: step=6000, BER=0.047030, CE loss=0.2173
+Epoch 0 --> 2/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.117576, L_CE=0.217299, Now=21:30:32
+Train: step=6500, BER=0.070036, CE loss=0.2156
+Epoch 0 --> 2/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.116726, L_CE=0.215556, Now=21:32:24
+Train: step=7000, BER=0.092950, CE loss=0.2145
+Epoch 0 --> 2/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.116188, L_CE=0.214507, Now=21:34:15
+Train: step=7500, BER=0.115662, CE loss=0.2135
+Epoch 0 --> 2/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.115662, L_CE=0.213496, Now=21:36:07
+Epoch 2, time/epoch = 562.25, epoch_loss = 0.000712
+Phase: valid Old EVA *******************
+Epoch 2, old EVA, BER=0.079099, epoch_loss = 0.177107
+Phase: valid new EVA *******************
+Epoch 2, New EVA, BER=0.094982, epoch_loss = 0.209496
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.079099, 	0.094982, 	0.177107, 	0.209496
+****************************************************************************************************Current best epoch= 2
+Remove the last best performance model CKP!!!
+
+Epoch: start 0 --> current/total=3/100
+Train: step=8000, BER=0.022434, CE loss=0.2072
+Epoch 0 --> 3/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.112171, L_CE=0.207175, Now=21:38:15
+Train: step=8500, BER=0.044711, CE loss=0.2065
+Epoch 0 --> 3/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.111778, L_CE=0.206514, Now=21:40:09
+Train: step=9000, BER=0.066902, CE loss=0.2061
+Epoch 0 --> 3/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.111504, L_CE=0.206108, Now=21:42:00
+Train: step=9500, BER=0.088779, CE loss=0.2052
+Epoch 0 --> 3/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.110973, L_CE=0.205189, Now=21:43:52
+Train: step=10000, BER=0.110447, CE loss=0.2043
+Epoch 0 --> 3/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.110447, L_CE=0.204275, Now=21:45:44
+Epoch 3, time/epoch = 567.20, epoch_loss = 0.000681
+Phase: valid Old EVA *******************
+Epoch 3, old EVA, BER=0.069025, epoch_loss = 0.155563
+Phase: valid new EVA *******************
+Epoch 3, New EVA, BER=0.084149, epoch_loss = 0.188611
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.069025, 	0.084149, 	0.155563, 	0.188611
+****************************************************************************************************Current best epoch= 3
+Remove the last best performance model CKP!!!
+
+Epoch: start 0 --> current/total=4/100
+Train: step=10500, BER=0.021381, CE loss=0.1980
+Epoch 0 --> 4/100, i= 500/2500, -5.00dB/90Hz, Tr_BER=0.106904, L_CE=0.197957, Now=21:47:51
+Train: step=11000, BER=0.042701, CE loss=0.1975
+Epoch 0 --> 4/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.106752, L_CE=0.197499, Now=21:49:45
+Train: step=11500, BER=0.063917, CE loss=0.1970
+Epoch 0 --> 4/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.106529, L_CE=0.197012, Now=21:51:37
+Train: step=12000, BER=0.085110, CE loss=0.1967
+Epoch 0 --> 4/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.106387, L_CE=0.196720, Now=21:53:29
+Train: step=12500, BER=0.106234, CE loss=0.1965
+Epoch 0 --> 4/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.106234, L_CE=0.196455, Now=21:55:19
+Epoch 4, time/epoch = 565.09, epoch_loss = 0.000655
+Phase: valid Old EVA *******************
+Epoch 4, old EVA, BER=0.066859, epoch_loss = 0.150716
+Phase: valid new EVA *******************
+Epoch 4, New EVA, BER=0.081412, epoch_loss = 0.181130
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.066859, 	0.081412, 	0.150716, 	0.181130
+****************************************************************************************************Current best epoch= 4
+Remove the last best performance model CKP!!!
+
+Epoch: start 0 --> current/total=5/100
+Train: step=13000, BER=0.021184, CE loss=0.1958
+Epoch 0 --> 5/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.105921, L_CE=0.195756, Now=21:57:20
+Train: step=13500, BER=0.042114, CE loss=0.1947
+Epoch 0 --> 5/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.105285, L_CE=0.194688, Now=21:59:05
+Train: step=14000, BER=0.062881, CE loss=0.1939
+Epoch 0 --> 5/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.104802, L_CE=0.193939, Now=22:00:58
+Train: step=14500, BER=0.083739, CE loss=0.1937
+Epoch 0 --> 5/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.104674, L_CE=0.193746, Now=22:02:49
+Train: step=15000, BER=0.104757, CE loss=0.1939
+Epoch 0 --> 5/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.104757, L_CE=0.193894, Now=22:04:44
+Epoch 5, time/epoch = 555.35, epoch_loss = 0.000646
+Phase: valid Old EVA *******************
+Epoch 5, old EVA, BER=0.070638, epoch_loss = 0.158497
+Phase: valid new EVA *******************
+Epoch 5, New EVA, BER=0.085152, epoch_loss = 0.188943
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.070638, 	0.085152, 	0.158497, 	0.188943
+Epoch: start 0 --> current/total=6/100
+Train: step=15500, BER=0.020867, CE loss=0.1930
+Epoch 0 --> 6/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.104336, L_CE=0.193021, Now=22:06:52
+Train: step=16000, BER=0.041619, CE loss=0.1926
+Epoch 0 --> 6/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.104047, L_CE=0.192612, Now=22:08:44
+Train: step=16500, BER=0.062282, CE loss=0.1922
+Epoch 0 --> 6/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.103803, L_CE=0.192208, Now=22:10:38
+Train: step=17000, BER=0.082921, CE loss=0.1920
+Epoch 0 --> 6/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.103651, L_CE=0.192005, Now=22:12:30
+Train: step=17500, BER=0.103645, CE loss=0.1920
+Epoch 0 --> 6/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.103645, L_CE=0.192019, Now=22:14:22
+Epoch 6, time/epoch = 568.46, epoch_loss = 0.000640
+Phase: valid Old EVA *******************
+Epoch 6, old EVA, BER=0.062665, epoch_loss = 0.142327
+Phase: valid new EVA *******************
+Epoch 6, New EVA, BER=0.077039, epoch_loss = 0.172422
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.062665, 	0.077039, 	0.142327, 	0.172422
+****************************************************************************************************Current best epoch= 6
+Remove the last best performance model CKP!!!
+
+Epoch: start 0 --> current/total=7/100
+Train: step=18000, BER=0.020516, CE loss=0.1903
+Epoch 0 --> 7/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.102580, L_CE=0.190335, Now=22:16:28
+Train: step=18500, BER=0.041284, CE loss=0.1915
+Epoch 0 --> 7/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.103210, L_CE=0.191452, Now=22:18:21
+Train: step=19000, BER=0.061911, CE loss=0.1914
+Epoch 0 --> 7/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.103185, L_CE=0.191369, Now=22:20:15
+Train: step=19500, BER=0.082549, CE loss=0.1914
+Epoch 0 --> 7/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.103187, L_CE=0.191363, Now=22:22:07
+Train: step=20000, BER=0.103126, CE loss=0.1912
+Epoch 0 --> 7/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.103126, L_CE=0.191231, Now=22:24:00
+Epoch 7, time/epoch = 568.37, epoch_loss = 0.000637
+Phase: valid Old EVA *******************
+Epoch 7, old EVA, BER=0.062186, epoch_loss = 0.141550
+Phase: valid new EVA *******************
+Epoch 7, New EVA, BER=0.076695, epoch_loss = 0.170965
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.062186, 	0.076695, 	0.141550, 	0.170965
+****************************************************************************************************Current best epoch= 7
+Remove the last best performance model CKP!!!
+
+Epoch: start 0 --> current/total=8/100
+Train: step=20500, BER=0.020519, CE loss=0.1903
+Epoch 0 --> 8/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.102597, L_CE=0.190325, Now=22:26:06
+Train: step=21000, BER=0.041099, CE loss=0.1906
+Epoch 0 --> 8/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.102749, L_CE=0.190610, Now=22:27:58
+Train: step=21500, BER=0.061867, CE loss=0.1913
+Epoch 0 --> 8/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.103112, L_CE=0.191339, Now=22:29:50
+Train: step=22000, BER=0.082443, CE loss=0.1912
+Epoch 0 --> 8/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.103053, L_CE=0.191249, Now=22:31:42
+Train: step=22500, BER=0.102915, CE loss=0.1910
+Epoch 0 --> 8/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.102915, L_CE=0.190994, Now=22:33:37
+Epoch 8, time/epoch = 568.12, epoch_loss = 0.000637
+Phase: valid Old EVA *******************
+Epoch 8, old EVA, BER=0.062301, epoch_loss = 0.141714
+Phase: valid new EVA *******************
+Epoch 8, New EVA, BER=0.076621, epoch_loss = 0.171269
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.062301, 	0.076621, 	0.141714, 	0.171269
+Epoch: start 0 --> current/total=9/100
+Train: step=23000, BER=0.020342, CE loss=0.1888
+Epoch 0 --> 9/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.101710, L_CE=0.188846, Now=22:35:44
+Train: step=23500, BER=0.040757, CE loss=0.1892
+Epoch 0 --> 9/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.101892, L_CE=0.189162, Now=22:37:38
+Train: step=24000, BER=0.061149, CE loss=0.1893
+Epoch 0 --> 9/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.101915, L_CE=0.189255, Now=22:39:31
+Train: step=24500, BER=0.081793, CE loss=0.1898
+Epoch 0 --> 9/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.102242, L_CE=0.189778, Now=22:41:24
+Train: step=25000, BER=0.102416, CE loss=0.1901
+Epoch 0 --> 9/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.102416, L_CE=0.190080, Now=22:43:16
+Epoch 9, time/epoch = 568.89, epoch_loss = 0.000634
+Phase: valid Old EVA *******************
+Epoch 9, old EVA, BER=0.062193, epoch_loss = 0.141100
+Phase: valid new EVA *******************
+Epoch 9, New EVA, BER=0.076534, epoch_loss = 0.170810
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.062193, 	0.076534, 	0.141100, 	0.170810
+Epoch: start 0 --> current/total=10/100
+Train: step=25500, BER=0.020250, CE loss=0.1883
+Epoch 0 --> 10/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.101248, L_CE=0.188311, Now=22:45:23
+Train: step=26000, BER=0.040433, CE loss=0.1880
+Epoch 0 --> 10/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.101082, L_CE=0.188036, Now=22:47:15
+Train: step=26500, BER=0.060473, CE loss=0.1875
+Epoch 0 --> 10/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.100789, L_CE=0.187487, Now=22:49:07
+Train: step=27000, BER=0.080570, CE loss=0.1874
+Epoch 0 --> 10/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.100713, L_CE=0.187358, Now=22:51:00
+Train: step=27500, BER=0.100633, CE loss=0.1872
+Epoch 0 --> 10/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.100633, L_CE=0.187240, Now=22:52:52
+Epoch 10, time/epoch = 566.61, epoch_loss = 0.000624
+Phase: valid Old EVA *******************
+Epoch 10, old EVA, BER=0.059728, epoch_loss = 0.135766
+Phase: valid new EVA *******************
+Epoch 10, New EVA, BER=0.073731, epoch_loss = 0.165019
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059728, 	0.073731, 	0.135766, 	0.165019
+****************************************************************************************************Current best epoch= 10
+Remove the last best performance model CKP!!!
+
+!!!!!! Remove file path and name: result/May25-v1-2100/ckp/epoch3
+!!!!!! Remove file path and name: result/May25-v1-2100/ckp/epoch4
+!!!!!! Remove file path and name: result/May25-v1-2100/ckp/epoch6
+!!!!!! Remove file path and name: result/May25-v1-2100/ckp/epoch7
+Remove epoch: 7 
+
+Epoch: start 0 --> current/total=11/100
+Train: step=28000, BER=0.020104, CE loss=0.1871
+Epoch 0 --> 11/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100519, L_CE=0.187084, Now=22:54:58
+Train: step=28500, BER=0.040133, CE loss=0.1868
+Epoch 0 --> 11/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.100332, L_CE=0.186843, Now=22:56:50
+Train: step=29000, BER=0.060273, CE loss=0.1870
+Epoch 0 --> 11/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.100455, L_CE=0.187026, Now=22:58:42
+Train: step=29500, BER=0.080360, CE loss=0.1870
+Epoch 0 --> 11/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.100450, L_CE=0.186974, Now=23:00:34
+Train: step=30000, BER=0.100319, CE loss=0.1868
+Epoch 0 --> 11/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.100319, L_CE=0.186761, Now=23:02:26
+Epoch 11, time/epoch = 563.95, epoch_loss = 0.000623
+Phase: valid Old EVA *******************
+Epoch 11, old EVA, BER=0.059584, epoch_loss = 0.135493
+Phase: valid new EVA *******************
+Epoch 11, New EVA, BER=0.073559, epoch_loss = 0.164685
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059584, 	0.073559, 	0.135493, 	0.164685
+****************************************************************************************************Current best epoch= 11
+Remove the last best performance model CKP!!!
+
+Remove epoch: 8 
+
+Epoch: start 0 --> current/total=12/100
+Train: step=30500, BER=0.020078, CE loss=0.1869
+Epoch 0 --> 12/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100390, L_CE=0.186948, Now=23:04:33
+Train: step=31000, BER=0.040110, CE loss=0.1867
+Epoch 0 --> 12/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.100274, L_CE=0.186696, Now=23:06:25
+Train: step=31500, BER=0.060219, CE loss=0.1869
+Epoch 0 --> 12/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.100365, L_CE=0.186859, Now=23:08:17
+Train: step=32000, BER=0.080167, CE loss=0.1866
+Epoch 0 --> 12/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.100209, L_CE=0.186576, Now=23:10:09
+Train: step=32500, BER=0.100211, CE loss=0.1866
+Epoch 0 --> 12/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.100211, L_CE=0.186588, Now=23:12:02
+Epoch 12, time/epoch = 566.20, epoch_loss = 0.000622
+Phase: valid Old EVA *******************
+Epoch 12, old EVA, BER=0.059561, epoch_loss = 0.135373
+Phase: valid new EVA *******************
+Epoch 12, New EVA, BER=0.073545, epoch_loss = 0.164523
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059561, 	0.073545, 	0.135373, 	0.164523
+****************************************************************************************************Current best epoch= 12
+Remove the last best performance model CKP!!!
+
+Remove epoch: 9 
+
+Epoch: start 0 --> current/total=13/100
+Train: step=33000, BER=0.019937, CE loss=0.1857
+Epoch 0 --> 13/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099687, L_CE=0.185694, Now=23:14:09
+Train: step=33500, BER=0.040000, CE loss=0.1863
+Epoch 0 --> 13/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.100000, L_CE=0.186256, Now=23:16:01
+Train: step=34000, BER=0.060016, CE loss=0.1863
+Epoch 0 --> 13/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.100026, L_CE=0.186285, Now=23:17:53
+Train: step=34500, BER=0.080034, CE loss=0.1863
+Epoch 0 --> 13/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.100043, L_CE=0.186331, Now=23:19:46
+Train: step=35000, BER=0.100130, CE loss=0.1865
+Epoch 0 --> 13/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.100130, L_CE=0.186476, Now=23:21:38
+Epoch 13, time/epoch = 566.65, epoch_loss = 0.000622
+Phase: valid Old EVA *******************
+Epoch 13, old EVA, BER=0.059619, epoch_loss = 0.135284
+Phase: valid new EVA *******************
+Epoch 13, New EVA, BER=0.073412, epoch_loss = 0.164341
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059619, 	0.073412, 	0.135284, 	0.164341
+Epoch: start 0 --> current/total=14/100
+Train: step=35500, BER=0.020023, CE loss=0.1864
+Epoch 0 --> 14/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.100114, L_CE=0.186425, Now=23:23:44
+Train: step=36000, BER=0.040083, CE loss=0.1866
+Epoch 0 --> 14/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.100207, L_CE=0.186556, Now=23:25:36
+Train: step=36500, BER=0.060055, CE loss=0.1864
+Epoch 0 --> 14/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.100091, L_CE=0.186379, Now=23:27:31
+Train: step=37000, BER=0.080050, CE loss=0.1863
+Epoch 0 --> 14/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.100063, L_CE=0.186321, Now=23:29:24
+Train: step=37500, BER=0.100075, CE loss=0.1864
+Epoch 0 --> 14/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.100075, L_CE=0.186391, Now=23:31:17
+Epoch 14, time/epoch = 569.27, epoch_loss = 0.000621
+Phase: valid Old EVA *******************
+Epoch 14, old EVA, BER=0.059551, epoch_loss = 0.135134
+Phase: valid new EVA *******************
+Epoch 14, New EVA, BER=0.073384, epoch_loss = 0.164274
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059551, 	0.073384, 	0.135134, 	0.164274
+****************************************************************************************************Current best epoch= 14
+Remove the last best performance model CKP!!!
+
+!!!!!! Remove file path and name: result/May25-v1-2100/ckp/epoch10
+!!!!!! Remove file path and name: result/May25-v1-2100/ckp/epoch11
+Remove epoch: 11 
+
+Epoch: start 0 --> current/total=15/100
+Train: step=38000, BER=0.019933, CE loss=0.1857
+Epoch 0 --> 15/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099663, L_CE=0.185724, Now=23:33:27
+Train: step=38500, BER=0.039982, CE loss=0.1862
+Epoch 0 --> 15/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099955, L_CE=0.186198, Now=23:35:20
+Train: step=39000, BER=0.060000, CE loss=0.1862
+Epoch 0 --> 15/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.100000, L_CE=0.186250, Now=23:37:13
+Train: step=39500, BER=0.079959, CE loss=0.1862
+Epoch 0 --> 15/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099949, L_CE=0.186188, Now=23:39:05
+Train: step=40000, BER=0.100039, CE loss=0.1863
+Epoch 0 --> 15/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.100039, L_CE=0.186324, Now=23:41:00
+Epoch 15, time/epoch = 573.42, epoch_loss = 0.000621
+Phase: valid Old EVA *******************
+Epoch 15, old EVA, BER=0.059568, epoch_loss = 0.135093
+Phase: valid new EVA *******************
+Epoch 15, New EVA, BER=0.073372, epoch_loss = 0.164227
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059568, 	0.073372, 	0.135093, 	0.164227
+Epoch: start 0 --> current/total=16/100
+Train: step=40500, BER=0.019983, CE loss=0.1862
+Epoch 0 --> 16/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.099913, L_CE=0.186219, Now=23:43:06
+Train: step=41000, BER=0.040011, CE loss=0.1863
+Epoch 0 --> 16/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.100027, L_CE=0.186307, Now=23:44:58
+Train: step=41500, BER=0.060025, CE loss=0.1863
+Epoch 0 --> 16/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.100042, L_CE=0.186331, Now=23:46:50
+Train: step=42000, BER=0.080004, CE loss=0.1863
+Epoch 0 --> 16/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.100005, L_CE=0.186255, Now=23:48:42
+Train: step=42500, BER=0.099995, CE loss=0.1863
+Epoch 0 --> 16/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099995, L_CE=0.186268, Now=23:50:34
+Epoch 16, time/epoch = 564.42, epoch_loss = 0.000621
+Phase: valid Old EVA *******************
+Epoch 16, old EVA, BER=0.059558, epoch_loss = 0.135074
+Phase: valid new EVA *******************
+Epoch 16, New EVA, BER=0.073330, epoch_loss = 0.164142
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059558, 	0.073330, 	0.135074, 	0.164142
+Epoch: start 0 --> current/total=17/100
+Train: step=43000, BER=0.019986, CE loss=0.1861
+Epoch 0 --> 17/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099929, L_CE=0.186067, Now=23:52:40
+Train: step=43500, BER=0.039981, CE loss=0.1862
+Epoch 0 --> 17/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099952, L_CE=0.186191, Now=23:54:33
+Train: step=44000, BER=0.059956, CE loss=0.1862
+Epoch 0 --> 17/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099927, L_CE=0.186165, Now=23:56:25
+Train: step=44500, BER=0.080083, CE loss=0.1865
+Epoch 0 --> 17/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.100104, L_CE=0.186481, Now=23:58:18
+Train: step=45000, BER=0.099960, CE loss=0.1862
+Epoch 0 --> 17/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099960, L_CE=0.186218, Now=00:00:10
+Epoch 17, time/epoch = 566.10, epoch_loss = 0.000621
+Phase: valid Old EVA *******************
+Epoch 17, old EVA, BER=0.059623, epoch_loss = 0.135065
+Phase: valid new EVA *******************
+Epoch 17, New EVA, BER=0.073388, epoch_loss = 0.164165
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059623, 	0.073388, 	0.135065, 	0.164165
+Epoch: start 0 --> current/total=18/100
+Train: step=45500, BER=0.019845, CE loss=0.1849
+Epoch 0 --> 18/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099224, L_CE=0.184896, Now=00:02:08
+Train: step=46000, BER=0.039828, CE loss=0.1855
+Epoch 0 --> 18/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.099571, L_CE=0.185549, Now=00:04:03
+Train: step=46500, BER=0.059903, CE loss=0.1860
+Epoch 0 --> 18/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099838, L_CE=0.185996, Now=00:05:57
+Train: step=47000, BER=0.079991, CE loss=0.1863
+Epoch 0 --> 18/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099989, L_CE=0.186281, Now=00:07:49
+Train: step=47500, BER=0.099932, CE loss=0.1862
+Epoch 0 --> 18/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099932, L_CE=0.186174, Now=00:09:42
+Epoch 18, time/epoch = 562.44, epoch_loss = 0.000621
+Phase: valid Old EVA *******************
+Epoch 18, old EVA, BER=0.059472, epoch_loss = 0.134977
+Phase: valid new EVA *******************
+Epoch 18, New EVA, BER=0.073347, epoch_loss = 0.164093
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059472, 	0.073347, 	0.134977, 	0.164093
+****************************************************************************************************Current best epoch= 18
+Remove the last best performance model CKP!!!
+
+!!!!!! Remove file path and name: result/May25-v1-2100/ckp/epoch12
+!!!!!! Remove file path and name: result/May25-v1-2100/ckp/epoch14
+Remove epoch: 15 
+
+Epoch: start 0 --> current/total=19/100
+Train: step=48000, BER=0.019941, CE loss=0.1858
+Epoch 0 --> 19/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099707, L_CE=0.185788, Now=00:11:48
+Train: step=48500, BER=0.040044, CE loss=0.1865
+Epoch 0 --> 19/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.100110, L_CE=0.186492, Now=00:13:40
+Train: step=49000, BER=0.059940, CE loss=0.1861
+Epoch 0 --> 19/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099900, L_CE=0.186139, Now=00:15:32
+Train: step=49500, BER=0.079897, CE loss=0.1861
+Epoch 0 --> 19/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099872, L_CE=0.186057, Now=00:17:23
+Train: step=50000, BER=0.099906, CE loss=0.1861
+Epoch 0 --> 19/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099906, L_CE=0.186135, Now=00:19:18
+Epoch 19, time/epoch = 567.14, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 19, old EVA, BER=0.059468, epoch_loss = 0.134939
+Phase: valid new EVA *******************
+Epoch 19, New EVA, BER=0.073287, epoch_loss = 0.164050
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059468, 	0.073287, 	0.134939, 	0.164050
+****************************************************************************************************Current best epoch= 19
+Remove the last best performance model CKP!!!
+
+Remove epoch: 16 
+
+Epoch: start 0 --> current/total=20/100
+Train: step=50500, BER=0.020043, CE loss=0.1867
+Epoch 0 --> 20/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100214, L_CE=0.186660, Now=00:21:25
+Train: step=51000, BER=0.040023, CE loss=0.1864
+Epoch 0 --> 20/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.100057, L_CE=0.186369, Now=00:23:17
+Train: step=51500, BER=0.059927, CE loss=0.1861
+Epoch 0 --> 20/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099878, L_CE=0.186141, Now=00:25:09
+Train: step=52000, BER=0.079911, CE loss=0.1861
+Epoch 0 --> 20/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099889, L_CE=0.186128, Now=00:27:02
+Train: step=52500, BER=0.099859, CE loss=0.1861
+Epoch 0 --> 20/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099859, L_CE=0.186068, Now=00:28:54
+Epoch 20, time/epoch = 565.46, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 20, old EVA, BER=0.059433, epoch_loss = 0.134921
+Phase: valid new EVA *******************
+Epoch 20, New EVA, BER=0.073280, epoch_loss = 0.164030
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059433, 	0.073280, 	0.134921, 	0.164030
+****************************************************************************************************Current best epoch= 20
+Remove the last best performance model CKP!!!
+
+Remove epoch: 17 
+
+Epoch: start 0 --> current/total=21/100
+Train: step=53000, BER=0.019930, CE loss=0.1859
+Epoch 0 --> 21/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099650, L_CE=0.185898, Now=00:31:00
+Train: step=53500, BER=0.039844, CE loss=0.1857
+Epoch 0 --> 21/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099611, L_CE=0.185660, Now=00:32:52
+Train: step=54000, BER=0.059867, CE loss=0.1859
+Epoch 0 --> 21/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099779, L_CE=0.185924, Now=00:34:46
+Train: step=54500, BER=0.079850, CE loss=0.1860
+Epoch 0 --> 21/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099813, L_CE=0.186023, Now=00:36:39
+Train: step=55000, BER=0.099854, CE loss=0.1861
+Epoch 0 --> 21/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099854, L_CE=0.186060, Now=00:38:31
+Epoch 21, time/epoch = 567.33, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 21, old EVA, BER=0.059433, epoch_loss = 0.134919
+Phase: valid new EVA *******************
+Epoch 21, New EVA, BER=0.073283, epoch_loss = 0.164034
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059433, 	0.073283, 	0.134919, 	0.164034
+Epoch: start 0 --> current/total=22/100
+Train: step=55500, BER=0.019941, CE loss=0.1859
+Epoch 0 --> 22/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099704, L_CE=0.185894, Now=00:40:38
+Train: step=56000, BER=0.039946, CE loss=0.1860
+Epoch 0 --> 22/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099866, L_CE=0.186044, Now=00:42:30
+Train: step=56500, BER=0.059904, CE loss=0.1860
+Epoch 0 --> 22/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099839, L_CE=0.186009, Now=00:44:23
+Train: step=57000, BER=0.079885, CE loss=0.1860
+Epoch 0 --> 22/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099856, L_CE=0.186033, Now=00:46:16
+Train: step=57500, BER=0.099854, CE loss=0.1861
+Epoch 0 --> 22/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099854, L_CE=0.186058, Now=00:48:08
+Epoch 22, time/epoch = 567.57, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 22, old EVA, BER=0.059432, epoch_loss = 0.134917
+Phase: valid new EVA *******************
+Epoch 22, New EVA, BER=0.073293, epoch_loss = 0.164034
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059432, 	0.073293, 	0.134917, 	0.164034
+****************************************************************************************************Current best epoch= 22
+Remove the last best performance model CKP!!!
+
+!!!!!! Remove file path and name: result/May25-v1-2100/ckp/epoch18
+!!!!!! Remove file path and name: result/May25-v1-2100/ckp/epoch19
+Remove epoch: 19 
+
+Epoch: start 0 --> current/total=23/100
+Train: step=58000, BER=0.020046, CE loss=0.1867
+Epoch 0 --> 23/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.100229, L_CE=0.186701, Now=00:50:15
+Train: step=58500, BER=0.039941, CE loss=0.1861
+Epoch 0 --> 23/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099852, L_CE=0.186052, Now=00:52:07
+Train: step=59000, BER=0.059965, CE loss=0.1862
+Epoch 0 --> 23/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099942, L_CE=0.186184, Now=00:54:02
+Train: step=59500, BER=0.079984, CE loss=0.1862
+Epoch 0 --> 23/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099980, L_CE=0.186227, Now=00:55:54
+Train: step=60000, BER=0.099853, CE loss=0.1861
+Epoch 0 --> 23/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099853, L_CE=0.186057, Now=00:57:46
+Epoch 23, time/epoch = 568.34, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 23, old EVA, BER=0.059423, epoch_loss = 0.134916
+Phase: valid new EVA *******************
+Epoch 23, New EVA, BER=0.073290, epoch_loss = 0.164034
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059423, 	0.073290, 	0.134916, 	0.164034
+****************************************************************************************************Current best epoch= 23
+Remove the last best performance model CKP!!!
+
+!!!!!! Remove file path and name: result/May25-v1-2100/ckp/epoch20
+Remove epoch: 20 
+
+Epoch: start 0 --> current/total=24/100
+Train: step=60500, BER=0.019954, CE loss=0.1859
+Epoch 0 --> 24/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099771, L_CE=0.185883, Now=00:59:54
+Train: step=61000, BER=0.039847, CE loss=0.1857
+Epoch 0 --> 24/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099618, L_CE=0.185662, Now=01:01:49
+Train: step=61500, BER=0.059770, CE loss=0.1857
+Epoch 0 --> 24/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099616, L_CE=0.185664, Now=01:03:41
+Train: step=62000, BER=0.079712, CE loss=0.1857
+Epoch 0 --> 24/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099640, L_CE=0.185710, Now=01:05:33
+Train: step=62500, BER=0.099853, CE loss=0.1861
+Epoch 0 --> 24/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099853, L_CE=0.186056, Now=01:07:26
+Epoch 24, time/epoch = 569.56, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 24, old EVA, BER=0.059413, epoch_loss = 0.134916
+Phase: valid new EVA *******************
+Epoch 24, New EVA, BER=0.073287, epoch_loss = 0.164035
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059413, 	0.073287, 	0.134916, 	0.164035
+****************************************************************************************************Current best epoch= 24
+Remove the last best performance model CKP!!!
+
+Remove epoch: 21 
+
+Epoch: start 0 --> current/total=25/100
+Train: step=63000, BER=0.019982, CE loss=0.1861
+Epoch 0 --> 25/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.099909, L_CE=0.186143, Now=01:09:33
+Train: step=63500, BER=0.040102, CE loss=0.1867
+Epoch 0 --> 25/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.100255, L_CE=0.186724, Now=01:11:24
+Train: step=64000, BER=0.060048, CE loss=0.1865
+Epoch 0 --> 25/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.100079, L_CE=0.186476, Now=01:13:17
+Train: step=64500, BER=0.079920, CE loss=0.1861
+Epoch 0 --> 25/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099900, L_CE=0.186139, Now=01:15:08
+Train: step=65000, BER=0.099853, CE loss=0.1861
+Epoch 0 --> 25/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099853, L_CE=0.186055, Now=01:17:00
+Epoch 25, time/epoch = 564.57, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 25, old EVA, BER=0.059420, epoch_loss = 0.134916
+Phase: valid new EVA *******************
+Epoch 25, New EVA, BER=0.073282, epoch_loss = 0.164035
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059420, 	0.073282, 	0.134916, 	0.164035
+Epoch: start 0 --> current/total=26/100
+Train: step=65500, BER=0.020025, CE loss=0.1863
+Epoch 0 --> 26/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100124, L_CE=0.186345, Now=01:19:07
+Train: step=66000, BER=0.039982, CE loss=0.1862
+Epoch 0 --> 26/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099956, L_CE=0.186230, Now=01:21:01
+Train: step=66500, BER=0.059935, CE loss=0.1861
+Epoch 0 --> 26/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099892, L_CE=0.186084, Now=01:22:54
+Train: step=67000, BER=0.079894, CE loss=0.1860
+Epoch 0 --> 26/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099867, L_CE=0.186033, Now=01:24:50
+Train: step=67500, BER=0.099852, CE loss=0.1861
+Epoch 0 --> 26/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099852, L_CE=0.186054, Now=01:26:44
+Epoch 26, time/epoch = 574.64, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 26, old EVA, BER=0.059416, epoch_loss = 0.134915
+Phase: valid new EVA *******************
+Epoch 26, New EVA, BER=0.073290, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059416, 	0.073290, 	0.134915, 	0.164033
+Epoch: start 0 --> current/total=27/100
+Train: step=68000, BER=0.019945, CE loss=0.1857
+Epoch 0 --> 27/100, i= 500/2500, -5.00dB/90Hz, Tr_BER=0.099725, L_CE=0.185735, Now=01:28:51
+Train: step=68500, BER=0.039845, CE loss=0.1856
+Epoch 0 --> 27/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099611, L_CE=0.185582, Now=01:30:44
+Train: step=69000, BER=0.059786, CE loss=0.1857
+Epoch 0 --> 27/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.099644, L_CE=0.185651, Now=01:32:37
+Train: step=69500, BER=0.079785, CE loss=0.1858
+Epoch 0 --> 27/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099731, L_CE=0.185807, Now=01:34:31
+Train: step=70000, BER=0.099851, CE loss=0.1861
+Epoch 0 --> 27/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099851, L_CE=0.186053, Now=01:36:23
+Epoch 27, time/epoch = 568.96, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 27, old EVA, BER=0.059432, epoch_loss = 0.134913
+Phase: valid new EVA *******************
+Epoch 27, New EVA, BER=0.073291, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059432, 	0.073291, 	0.134913, 	0.164033
+Epoch: start 0 --> current/total=28/100
+Train: step=70500, BER=0.020012, CE loss=0.1865
+Epoch 0 --> 28/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.100061, L_CE=0.186503, Now=01:38:18
+Train: step=71000, BER=0.040000, CE loss=0.1863
+Epoch 0 --> 28/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099999, L_CE=0.186323, Now=01:40:03
+Train: step=71500, BER=0.060035, CE loss=0.1865
+Epoch 0 --> 28/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.100058, L_CE=0.186455, Now=01:41:54
+Train: step=72000, BER=0.079917, CE loss=0.1861
+Epoch 0 --> 28/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099896, L_CE=0.186147, Now=01:43:46
+Train: step=72500, BER=0.099852, CE loss=0.1861
+Epoch 0 --> 28/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099852, L_CE=0.186053, Now=01:45:39
+Epoch 28, time/epoch = 545.68, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 28, old EVA, BER=0.059420, epoch_loss = 0.134912
+Phase: valid new EVA *******************
+Epoch 28, New EVA, BER=0.073289, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059420, 	0.073289, 	0.134912, 	0.164033
+Epoch: start 0 --> current/total=29/100
+Train: step=73000, BER=0.020028, CE loss=0.1864
+Epoch 0 --> 29/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100139, L_CE=0.186442, Now=01:47:36
+Train: step=73500, BER=0.039966, CE loss=0.1862
+Epoch 0 --> 29/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099916, L_CE=0.186153, Now=01:49:27
+Train: step=74000, BER=0.059955, CE loss=0.1862
+Epoch 0 --> 29/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.099925, L_CE=0.186200, Now=01:51:19
+Train: step=74500, BER=0.079987, CE loss=0.1862
+Epoch 0 --> 29/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099984, L_CE=0.186240, Now=01:53:11
+Train: step=75000, BER=0.099851, CE loss=0.1861
+Epoch 0 --> 29/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099851, L_CE=0.186052, Now=01:55:03
+Epoch 29, time/epoch = 555.65, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 29, old EVA, BER=0.059429, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 29, New EVA, BER=0.073286, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059429, 	0.073286, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=30/100
+Train: step=75500, BER=0.019954, CE loss=0.1858
+Epoch 0 --> 30/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099772, L_CE=0.185794, Now=01:57:09
+Train: step=76000, BER=0.039972, CE loss=0.1861
+Epoch 0 --> 30/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.099930, L_CE=0.186148, Now=01:59:03
+Train: step=76500, BER=0.059947, CE loss=0.1861
+Epoch 0 --> 30/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099912, L_CE=0.186118, Now=02:00:55
+Train: step=77000, BER=0.079960, CE loss=0.1862
+Epoch 0 --> 30/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099950, L_CE=0.186226, Now=02:02:47
+Train: step=77500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 30/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=02:04:39
+Epoch 30, time/epoch = 565.57, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 30, old EVA, BER=0.059430, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 30, New EVA, BER=0.073287, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059430, 	0.073287, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=31/100
+Train: step=78000, BER=0.020113, CE loss=0.1873
+Epoch 0 --> 31/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100563, L_CE=0.187277, Now=02:06:45
+Train: step=78500, BER=0.040163, CE loss=0.1870
+Epoch 0 --> 31/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.100407, L_CE=0.186965, Now=02:08:37
+Train: step=79000, BER=0.059960, CE loss=0.1862
+Epoch 0 --> 31/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099933, L_CE=0.186207, Now=02:10:31
+Train: step=79500, BER=0.079834, CE loss=0.1859
+Epoch 0 --> 31/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099793, L_CE=0.185948, Now=02:12:23
+Train: step=80000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 31/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=02:14:16
+Epoch 31, time/epoch = 567.14, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 31, old EVA, BER=0.059430, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 31, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059430, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=32/100
+Train: step=80500, BER=0.019840, CE loss=0.1849
+Epoch 0 --> 32/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099198, L_CE=0.184944, Now=02:16:24
+Train: step=81000, BER=0.039823, CE loss=0.1856
+Epoch 0 --> 32/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099557, L_CE=0.185615, Now=02:18:16
+Train: step=81500, BER=0.059799, CE loss=0.1857
+Epoch 0 --> 32/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099666, L_CE=0.185750, Now=02:20:08
+Train: step=82000, BER=0.079901, CE loss=0.1861
+Epoch 0 --> 32/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099876, L_CE=0.186099, Now=02:22:02
+Train: step=82500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 32/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=02:23:54
+Epoch 32, time/epoch = 568.67, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 32, old EVA, BER=0.059429, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 32, New EVA, BER=0.073287, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059429, 	0.073287, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=33/100
+Train: step=83000, BER=0.019943, CE loss=0.1857
+Epoch 0 --> 33/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.099714, L_CE=0.185677, Now=02:26:00
+Train: step=83500, BER=0.039940, CE loss=0.1860
+Epoch 0 --> 33/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099851, L_CE=0.186032, Now=02:27:52
+Train: step=84000, BER=0.059956, CE loss=0.1861
+Epoch 0 --> 33/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099927, L_CE=0.186144, Now=02:29:44
+Train: step=84500, BER=0.079904, CE loss=0.1861
+Epoch 0 --> 33/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099880, L_CE=0.186069, Now=02:31:36
+Train: step=85000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 33/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=02:33:31
+Epoch 33, time/epoch = 567.05, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 33, old EVA, BER=0.059428, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 33, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059428, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=34/100
+Train: step=85500, BER=0.020032, CE loss=0.1866
+Epoch 0 --> 34/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100159, L_CE=0.186565, Now=02:35:36
+Train: step=86000, BER=0.039950, CE loss=0.1861
+Epoch 0 --> 34/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099875, L_CE=0.186068, Now=02:37:27
+Train: step=86500, BER=0.059915, CE loss=0.1860
+Epoch 0 --> 34/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099858, L_CE=0.186047, Now=02:39:19
+Train: step=87000, BER=0.079883, CE loss=0.1860
+Epoch 0 --> 34/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099854, L_CE=0.186017, Now=02:41:11
+Train: step=87500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 34/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=02:43:03
+Epoch 34, time/epoch = 563.32, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 34, old EVA, BER=0.059428, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 34, New EVA, BER=0.073289, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059428, 	0.073289, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=35/100
+Train: step=88000, BER=0.020042, CE loss=0.1867
+Epoch 0 --> 35/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100208, L_CE=0.186682, Now=02:45:09
+Train: step=88500, BER=0.040031, CE loss=0.1865
+Epoch 0 --> 35/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.100077, L_CE=0.186468, Now=02:47:00
+Train: step=89000, BER=0.059935, CE loss=0.1862
+Epoch 0 --> 35/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099891, L_CE=0.186181, Now=02:48:52
+Train: step=89500, BER=0.079868, CE loss=0.1860
+Epoch 0 --> 35/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099835, L_CE=0.186035, Now=02:50:44
+Train: step=90000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 35/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=02:52:37
+Epoch 35, time/epoch = 563.80, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 35, old EVA, BER=0.059428, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 35, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059428, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=36/100
+Train: step=90500, BER=0.020108, CE loss=0.1873
+Epoch 0 --> 36/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100539, L_CE=0.187333, Now=02:54:36
+Train: step=91000, BER=0.040107, CE loss=0.1868
+Epoch 0 --> 36/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.100268, L_CE=0.186815, Now=02:56:29
+Train: step=91500, BER=0.060075, CE loss=0.1866
+Epoch 0 --> 36/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.100125, L_CE=0.186554, Now=02:58:21
+Train: step=92000, BER=0.079888, CE loss=0.1861
+Epoch 0 --> 36/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099860, L_CE=0.186083, Now=03:00:14
+Train: step=92500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 36/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=03:02:08
+Epoch 36, time/epoch = 561.45, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 36, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 36, New EVA, BER=0.073289, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073289, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=37/100
+Train: step=93000, BER=0.019988, CE loss=0.1862
+Epoch 0 --> 37/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099942, L_CE=0.186193, Now=03:04:10
+Train: step=93500, BER=0.039971, CE loss=0.1862
+Epoch 0 --> 37/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099927, L_CE=0.186219, Now=03:06:03
+Train: step=94000, BER=0.059945, CE loss=0.1862
+Epoch 0 --> 37/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.099908, L_CE=0.186153, Now=03:07:55
+Train: step=94500, BER=0.079812, CE loss=0.1859
+Epoch 0 --> 37/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099765, L_CE=0.185893, Now=03:09:47
+Train: step=95000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 37/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=03:11:39
+Epoch 37, time/epoch = 562.20, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 37, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 37, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=38/100
+Train: step=95500, BER=0.019938, CE loss=0.1856
+Epoch 0 --> 38/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099690, L_CE=0.185622, Now=03:13:46
+Train: step=96000, BER=0.039837, CE loss=0.1855
+Epoch 0 --> 38/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099592, L_CE=0.185527, Now=03:15:38
+Train: step=96500, BER=0.059820, CE loss=0.1858
+Epoch 0 --> 38/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099700, L_CE=0.185770, Now=03:17:31
+Train: step=97000, BER=0.079834, CE loss=0.1860
+Epoch 0 --> 38/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099793, L_CE=0.185966, Now=03:19:23
+Train: step=97500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 38/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=03:21:16
+Epoch 38, time/epoch = 566.81, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 38, old EVA, BER=0.059425, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 38, New EVA, BER=0.073289, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059425, 	0.073289, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=39/100
+Train: step=98000, BER=0.019905, CE loss=0.1856
+Epoch 0 --> 39/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099523, L_CE=0.185630, Now=03:23:22
+Train: step=98500, BER=0.039966, CE loss=0.1862
+Epoch 0 --> 39/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099914, L_CE=0.186221, Now=03:25:14
+Train: step=99000, BER=0.059925, CE loss=0.1860
+Epoch 0 --> 39/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.099875, L_CE=0.186027, Now=03:27:07
+Train: step=99500, BER=0.079943, CE loss=0.1862
+Epoch 0 --> 39/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099929, L_CE=0.186156, Now=03:29:00
+Train: step=100000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 39/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=03:30:53
+Epoch 39, time/epoch = 567.38, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 39, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 39, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=40/100
+Train: step=100500, BER=0.020040, CE loss=0.1868
+Epoch 0 --> 40/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.100200, L_CE=0.186812, Now=03:33:00
+Train: step=101000, BER=0.039998, CE loss=0.1864
+Epoch 0 --> 40/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099995, L_CE=0.186394, Now=03:34:52
+Train: step=101500, BER=0.059988, CE loss=0.1863
+Epoch 0 --> 40/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099981, L_CE=0.186322, Now=03:36:45
+Train: step=102000, BER=0.079920, CE loss=0.1861
+Epoch 0 --> 40/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099900, L_CE=0.186142, Now=03:38:37
+Train: step=102500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 40/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=03:40:29
+Epoch 40, time/epoch = 565.72, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 40, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 40, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=41/100
+Train: step=103000, BER=0.019986, CE loss=0.1862
+Epoch 0 --> 41/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.099930, L_CE=0.186151, Now=03:42:35
+Train: step=103500, BER=0.039947, CE loss=0.1861
+Epoch 0 --> 41/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.099869, L_CE=0.186070, Now=03:44:28
+Train: step=104000, BER=0.059911, CE loss=0.1861
+Epoch 0 --> 41/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099852, L_CE=0.186077, Now=03:46:21
+Train: step=104500, BER=0.079873, CE loss=0.1860
+Epoch 0 --> 41/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099842, L_CE=0.185997, Now=03:48:14
+Train: step=105000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 41/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=03:50:07
+Epoch 41, time/epoch = 569.12, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 41, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 41, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=42/100
+Train: step=105500, BER=0.019959, CE loss=0.1859
+Epoch 0 --> 42/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.099797, L_CE=0.185943, Now=03:52:12
+Train: step=106000, BER=0.039988, CE loss=0.1862
+Epoch 0 --> 42/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099969, L_CE=0.186218, Now=03:54:04
+Train: step=106500, BER=0.060115, CE loss=0.1866
+Epoch 0 --> 42/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.100191, L_CE=0.186625, Now=03:55:55
+Train: step=107000, BER=0.079995, CE loss=0.1863
+Epoch 0 --> 42/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099994, L_CE=0.186328, Now=03:57:46
+Train: step=107500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 42/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=03:59:38
+Epoch 42, time/epoch = 560.98, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 42, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 42, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=43/100
+Train: step=108000, BER=0.020002, CE loss=0.1864
+Epoch 0 --> 43/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100009, L_CE=0.186388, Now=04:01:35
+Train: step=108500, BER=0.039913, CE loss=0.1859
+Epoch 0 --> 43/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099783, L_CE=0.185929, Now=04:03:27
+Train: step=109000, BER=0.059812, CE loss=0.1857
+Epoch 0 --> 43/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.099686, L_CE=0.185743, Now=04:05:19
+Train: step=109500, BER=0.079798, CE loss=0.1859
+Epoch 0 --> 43/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099748, L_CE=0.185850, Now=04:07:12
+Train: step=110000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 43/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=04:09:04
+Epoch 43, time/epoch = 556.81, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 43, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 43, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=44/100
+Train: step=110500, BER=0.019897, CE loss=0.1854
+Epoch 0 --> 44/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099487, L_CE=0.185385, Now=04:11:11
+Train: step=111000, BER=0.039804, CE loss=0.1855
+Epoch 0 --> 44/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.099511, L_CE=0.185511, Now=04:13:03
+Train: step=111500, BER=0.059771, CE loss=0.1857
+Epoch 0 --> 44/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099618, L_CE=0.185673, Now=04:14:55
+Train: step=112000, BER=0.079811, CE loss=0.1859
+Epoch 0 --> 44/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099763, L_CE=0.185889, Now=04:16:46
+Train: step=112500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 44/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=04:18:38
+Epoch 44, time/epoch = 563.97, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 44, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 44, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=45/100
+Train: step=113000, BER=0.020040, CE loss=0.1868
+Epoch 0 --> 45/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.100199, L_CE=0.186772, Now=04:20:44
+Train: step=113500, BER=0.039958, CE loss=0.1861
+Epoch 0 --> 45/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099894, L_CE=0.186143, Now=04:22:36
+Train: step=114000, BER=0.059876, CE loss=0.1860
+Epoch 0 --> 45/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099794, L_CE=0.185957, Now=04:24:29
+Train: step=114500, BER=0.079858, CE loss=0.1860
+Epoch 0 --> 45/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099822, L_CE=0.185966, Now=04:26:20
+Train: step=115000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 45/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=04:28:12
+Epoch 45, time/epoch = 565.16, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 45, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 45, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=46/100
+Train: step=115500, BER=0.020021, CE loss=0.1866
+Epoch 0 --> 46/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100107, L_CE=0.186648, Now=04:30:19
+Train: step=116000, BER=0.039958, CE loss=0.1862
+Epoch 0 --> 46/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099895, L_CE=0.186203, Now=04:32:10
+Train: step=116500, BER=0.059814, CE loss=0.1858
+Epoch 0 --> 46/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.099691, L_CE=0.185822, Now=04:34:01
+Train: step=117000, BER=0.079817, CE loss=0.1859
+Epoch 0 --> 46/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099772, L_CE=0.185935, Now=04:35:53
+Train: step=117500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 46/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=04:37:45
+Epoch 46, time/epoch = 563.11, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 46, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 46, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=47/100
+Train: step=118000, BER=0.019997, CE loss=0.1864
+Epoch 0 --> 47/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099983, L_CE=0.186350, Now=04:39:55
+Train: step=118500, BER=0.040052, CE loss=0.1866
+Epoch 0 --> 47/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.100131, L_CE=0.186627, Now=04:41:47
+Train: step=119000, BER=0.059987, CE loss=0.1863
+Epoch 0 --> 47/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099978, L_CE=0.186311, Now=04:43:40
+Train: step=119500, BER=0.080032, CE loss=0.1864
+Epoch 0 --> 47/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.100041, L_CE=0.186391, Now=04:45:35
+Train: step=120000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 47/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=04:47:28
+Epoch 47, time/epoch = 572.89, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 47, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 47, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=48/100
+Train: step=120500, BER=0.020023, CE loss=0.1866
+Epoch 0 --> 48/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100115, L_CE=0.186630, Now=04:49:33
+Train: step=121000, BER=0.039950, CE loss=0.1861
+Epoch 0 --> 48/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099874, L_CE=0.186099, Now=04:51:25
+Train: step=121500, BER=0.059948, CE loss=0.1862
+Epoch 0 --> 48/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099914, L_CE=0.186155, Now=04:53:16
+Train: step=122000, BER=0.079931, CE loss=0.1862
+Epoch 0 --> 48/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099914, L_CE=0.186167, Now=04:55:10
+Train: step=122500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 48/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=04:57:03
+Epoch 48, time/epoch = 566.40, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 48, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 48, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=49/100
+Train: step=123000, BER=0.019899, CE loss=0.1854
+Epoch 0 --> 49/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.099496, L_CE=0.185410, Now=04:59:09
+Train: step=123500, BER=0.039873, CE loss=0.1857
+Epoch 0 --> 49/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099682, L_CE=0.185708, Now=05:01:01
+Train: step=124000, BER=0.059835, CE loss=0.1858
+Epoch 0 --> 49/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099725, L_CE=0.185765, Now=05:02:53
+Train: step=124500, BER=0.079865, CE loss=0.1860
+Epoch 0 --> 49/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099831, L_CE=0.185973, Now=05:04:46
+Train: step=125000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 49/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=05:06:37
+Epoch 49, time/epoch = 564.54, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 49, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 49, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=50/100
+Train: step=125500, BER=0.019959, CE loss=0.1859
+Epoch 0 --> 50/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099795, L_CE=0.185949, Now=05:08:47
+Train: step=126000, BER=0.039939, CE loss=0.1860
+Epoch 0 --> 50/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099848, L_CE=0.186025, Now=05:10:39
+Train: step=126500, BER=0.059936, CE loss=0.1861
+Epoch 0 --> 50/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.099894, L_CE=0.186097, Now=05:12:34
+Train: step=127000, BER=0.079799, CE loss=0.1859
+Epoch 0 --> 50/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099748, L_CE=0.185882, Now=05:14:26
+Train: step=127500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 50/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=05:16:20
+Epoch 50, time/epoch = 572.46, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 50, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 50, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=51/100
+Train: step=128000, BER=0.019960, CE loss=0.1860
+Epoch 0 --> 51/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099799, L_CE=0.185989, Now=05:18:13
+Train: step=128500, BER=0.039910, CE loss=0.1860
+Epoch 0 --> 51/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099776, L_CE=0.185950, Now=05:19:54
+Train: step=129000, BER=0.059936, CE loss=0.1861
+Epoch 0 --> 51/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099893, L_CE=0.186125, Now=05:21:34
+Train: step=129500, BER=0.079842, CE loss=0.1860
+Epoch 0 --> 51/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099802, L_CE=0.185984, Now=05:23:14
+Train: step=130000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 51/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=05:24:54
+Epoch 51, time/epoch = 505.33, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 51, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 51, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=52/100
+Train: step=130500, BER=0.019870, CE loss=0.1851
+Epoch 0 --> 52/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099349, L_CE=0.185121, Now=05:27:02
+Train: step=131000, BER=0.039890, CE loss=0.1858
+Epoch 0 --> 52/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099725, L_CE=0.185811, Now=05:28:54
+Train: step=131500, BER=0.059795, CE loss=0.1857
+Epoch 0 --> 52/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099658, L_CE=0.185737, Now=05:30:46
+Train: step=132000, BER=0.079837, CE loss=0.1860
+Epoch 0 --> 52/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099796, L_CE=0.185959, Now=05:32:38
+Train: step=132500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 52/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=05:34:31
+Epoch 52, time/epoch = 566.60, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 52, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 52, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=53/100
+Train: step=133000, BER=0.019823, CE loss=0.1847
+Epoch 0 --> 53/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099113, L_CE=0.184750, Now=05:36:39
+Train: step=133500, BER=0.039795, CE loss=0.1855
+Epoch 0 --> 53/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099487, L_CE=0.185450, Now=05:38:31
+Train: step=134000, BER=0.059854, CE loss=0.1859
+Epoch 0 --> 53/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099756, L_CE=0.185940, Now=05:40:23
+Train: step=134500, BER=0.079860, CE loss=0.1860
+Epoch 0 --> 53/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099825, L_CE=0.186020, Now=05:42:16
+Train: step=135000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 53/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=05:44:08
+Epoch 53, time/epoch = 568.09, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 53, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 53, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=54/100
+Train: step=135500, BER=0.019975, CE loss=0.1860
+Epoch 0 --> 54/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099877, L_CE=0.186026, Now=05:46:15
+Train: step=136000, BER=0.039951, CE loss=0.1861
+Epoch 0 --> 54/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.099877, L_CE=0.186129, Now=05:48:07
+Train: step=136500, BER=0.059934, CE loss=0.1861
+Epoch 0 --> 54/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099891, L_CE=0.186138, Now=05:49:59
+Train: step=137000, BER=0.079864, CE loss=0.1860
+Epoch 0 --> 54/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099830, L_CE=0.186023, Now=05:51:51
+Train: step=137500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 54/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=05:53:43
+Epoch 54, time/epoch = 564.71, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 54, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 54, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=55/100
+Train: step=138000, BER=0.019911, CE loss=0.1855
+Epoch 0 --> 55/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099557, L_CE=0.185464, Now=05:55:44
+Train: step=138500, BER=0.039927, CE loss=0.1860
+Epoch 0 --> 55/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.099817, L_CE=0.185957, Now=05:57:36
+Train: step=139000, BER=0.059872, CE loss=0.1859
+Epoch 0 --> 55/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099787, L_CE=0.185890, Now=05:59:29
+Train: step=139500, BER=0.079921, CE loss=0.1861
+Epoch 0 --> 55/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099901, L_CE=0.186114, Now=06:01:21
+Train: step=140000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 55/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=06:03:12
+Epoch 55, time/epoch = 560.22, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 55, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 55, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=56/100
+Train: step=140500, BER=0.019930, CE loss=0.1855
+Epoch 0 --> 56/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099649, L_CE=0.185505, Now=06:05:17
+Train: step=141000, BER=0.039956, CE loss=0.1861
+Epoch 0 --> 56/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099890, L_CE=0.186071, Now=06:07:09
+Train: step=141500, BER=0.059904, CE loss=0.1860
+Epoch 0 --> 56/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099840, L_CE=0.185979, Now=06:09:01
+Train: step=142000, BER=0.079875, CE loss=0.1860
+Epoch 0 --> 56/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099844, L_CE=0.186013, Now=06:10:54
+Train: step=142500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 56/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=06:12:47
+Epoch 56, time/epoch = 565.15, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 56, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 56, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=57/100
+Train: step=143000, BER=0.020119, CE loss=0.1873
+Epoch 0 --> 57/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100595, L_CE=0.187271, Now=06:14:52
+Train: step=143500, BER=0.040121, CE loss=0.1869
+Epoch 0 --> 57/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.100304, L_CE=0.186851, Now=06:16:43
+Train: step=144000, BER=0.060042, CE loss=0.1864
+Epoch 0 --> 57/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.100069, L_CE=0.186421, Now=06:18:34
+Train: step=144500, BER=0.079964, CE loss=0.1862
+Epoch 0 --> 57/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099955, L_CE=0.186235, Now=06:20:26
+Train: step=145000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 57/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=06:22:17
+Epoch 57, time/epoch = 560.58, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 57, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 57, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=58/100
+Train: step=145500, BER=0.019935, CE loss=0.1857
+Epoch 0 --> 58/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.099673, L_CE=0.185679, Now=06:24:16
+Train: step=146000, BER=0.039913, CE loss=0.1859
+Epoch 0 --> 58/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099783, L_CE=0.185887, Now=06:26:07
+Train: step=146500, BER=0.059945, CE loss=0.1861
+Epoch 0 --> 58/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099908, L_CE=0.186107, Now=06:27:59
+Train: step=147000, BER=0.079969, CE loss=0.1862
+Epoch 0 --> 58/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099961, L_CE=0.186207, Now=06:29:50
+Train: step=147500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 58/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=06:31:42
+Epoch 58, time/epoch = 555.30, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 58, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 58, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=59/100
+Train: step=148000, BER=0.019994, CE loss=0.1862
+Epoch 0 --> 59/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099969, L_CE=0.186151, Now=06:33:52
+Train: step=148500, BER=0.039880, CE loss=0.1857
+Epoch 0 --> 59/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099699, L_CE=0.185688, Now=06:35:49
+Train: step=149000, BER=0.059776, CE loss=0.1856
+Epoch 0 --> 59/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099627, L_CE=0.185630, Now=06:37:45
+Train: step=149500, BER=0.079753, CE loss=0.1858
+Epoch 0 --> 59/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099691, L_CE=0.185765, Now=06:39:39
+Train: step=150000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 59/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=06:41:32
+Epoch 59, time/epoch = 580.27, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 59, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 59, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=60/100
+Train: step=150500, BER=0.020001, CE loss=0.1863
+Epoch 0 --> 60/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.100006, L_CE=0.186329, Now=06:43:40
+Train: step=151000, BER=0.040013, CE loss=0.1864
+Epoch 0 --> 60/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.100033, L_CE=0.186413, Now=06:45:33
+Train: step=151500, BER=0.060058, CE loss=0.1865
+Epoch 0 --> 60/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.100096, L_CE=0.186499, Now=06:47:25
+Train: step=152000, BER=0.079795, CE loss=0.1859
+Epoch 0 --> 60/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099744, L_CE=0.185880, Now=06:49:16
+Train: step=152500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 60/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=06:51:08
+Epoch 60, time/epoch = 566.82, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 60, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 60, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=61/100
+Train: step=153000, BER=0.020046, CE loss=0.1867
+Epoch 0 --> 61/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.100228, L_CE=0.186674, Now=06:53:14
+Train: step=153500, BER=0.039886, CE loss=0.1858
+Epoch 0 --> 61/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.099715, L_CE=0.185805, Now=06:55:07
+Train: step=154000, BER=0.059890, CE loss=0.1860
+Epoch 0 --> 61/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099817, L_CE=0.185999, Now=06:56:59
+Train: step=154500, BER=0.079907, CE loss=0.1861
+Epoch 0 --> 61/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099883, L_CE=0.186137, Now=06:58:51
+Train: step=155000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 61/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=07:00:46
+Epoch 61, time/epoch = 567.95, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 61, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 61, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=62/100
+Train: step=155500, BER=0.019996, CE loss=0.1863
+Epoch 0 --> 62/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099979, L_CE=0.186331, Now=07:02:53
+Train: step=156000, BER=0.039924, CE loss=0.1860
+Epoch 0 --> 62/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099809, L_CE=0.186030, Now=07:04:45
+Train: step=156500, BER=0.059868, CE loss=0.1859
+Epoch 0 --> 62/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099781, L_CE=0.185881, Now=07:06:39
+Train: step=157000, BER=0.079870, CE loss=0.1860
+Epoch 0 --> 62/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099837, L_CE=0.186017, Now=07:08:35
+Train: step=157500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 62/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=07:10:31
+Epoch 62, time/epoch = 575.66, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 62, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 62, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=63/100
+Train: step=158000, BER=0.020001, CE loss=0.1862
+Epoch 0 --> 63/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100004, L_CE=0.186236, Now=07:12:35
+Train: step=158500, BER=0.039905, CE loss=0.1858
+Epoch 0 --> 63/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099762, L_CE=0.185807, Now=07:14:28
+Train: step=159000, BER=0.059897, CE loss=0.1860
+Epoch 0 --> 63/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099828, L_CE=0.185951, Now=07:16:20
+Train: step=159500, BER=0.079819, CE loss=0.1859
+Epoch 0 --> 63/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099774, L_CE=0.185891, Now=07:18:11
+Train: step=160000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 63/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=07:20:03
+Epoch 63, time/epoch = 562.49, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 63, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 63, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=64/100
+Train: step=160500, BER=0.019946, CE loss=0.1860
+Epoch 0 --> 64/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099732, L_CE=0.185975, Now=07:21:58
+Train: step=161000, BER=0.040004, CE loss=0.1864
+Epoch 0 --> 64/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.100009, L_CE=0.186351, Now=07:23:47
+Train: step=161500, BER=0.060027, CE loss=0.1864
+Epoch 0 --> 64/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.100046, L_CE=0.186362, Now=07:25:39
+Train: step=162000, BER=0.079974, CE loss=0.1862
+Epoch 0 --> 64/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099968, L_CE=0.186206, Now=07:27:31
+Train: step=162500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 64/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=07:29:23
+Epoch 64, time/epoch = 549.70, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 64, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 64, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=65/100
+Train: step=163000, BER=0.019907, CE loss=0.1855
+Epoch 0 --> 65/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.099533, L_CE=0.185549, Now=07:31:28
+Train: step=163500, BER=0.039991, CE loss=0.1863
+Epoch 0 --> 65/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.099978, L_CE=0.186290, Now=07:33:20
+Train: step=164000, BER=0.059887, CE loss=0.1860
+Epoch 0 --> 65/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099811, L_CE=0.185987, Now=07:35:12
+Train: step=164500, BER=0.079899, CE loss=0.1861
+Epoch 0 --> 65/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099874, L_CE=0.186063, Now=07:37:04
+Train: step=165000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 65/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=07:38:56
+Epoch 65, time/epoch = 564.38, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 65, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 65, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=66/100
+Train: step=165500, BER=0.019841, CE loss=0.1851
+Epoch 0 --> 66/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.099203, L_CE=0.185064, Now=07:41:03
+Train: step=166000, BER=0.039816, CE loss=0.1856
+Epoch 0 --> 66/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.099540, L_CE=0.185557, Now=07:42:58
+Train: step=166500, BER=0.059803, CE loss=0.1858
+Epoch 0 --> 66/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.099672, L_CE=0.185765, Now=07:44:50
+Train: step=167000, BER=0.079785, CE loss=0.1859
+Epoch 0 --> 66/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099731, L_CE=0.185857, Now=07:46:42
+Train: step=167500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 66/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=07:48:34
+Epoch 66, time/epoch = 567.62, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 66, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 66, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=67/100
+Train: step=168000, BER=0.019899, CE loss=0.1853
+Epoch 0 --> 67/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099496, L_CE=0.185344, Now=07:50:40
+Train: step=168500, BER=0.039794, CE loss=0.1854
+Epoch 0 --> 67/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.099484, L_CE=0.185354, Now=07:52:32
+Train: step=169000, BER=0.059742, CE loss=0.1855
+Epoch 0 --> 67/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099571, L_CE=0.185547, Now=07:54:24
+Train: step=169500, BER=0.079797, CE loss=0.1859
+Epoch 0 --> 67/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099746, L_CE=0.185852, Now=07:56:16
+Train: step=170000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 67/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=07:58:08
+Epoch 67, time/epoch = 564.74, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 67, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 67, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=68/100
+Train: step=170500, BER=0.019958, CE loss=0.1860
+Epoch 0 --> 68/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.099789, L_CE=0.186048, Now=08:00:14
+Train: step=171000, BER=0.039904, CE loss=0.1860
+Epoch 0 --> 68/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099761, L_CE=0.185954, Now=08:02:06
+Train: step=171500, BER=0.059933, CE loss=0.1861
+Epoch 0 --> 68/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099888, L_CE=0.186111, Now=08:04:01
+Train: step=172000, BER=0.079866, CE loss=0.1860
+Epoch 0 --> 68/100, i=2000/2500, -5.00dB/90Hz, Tr_BER=0.099832, L_CE=0.186048, Now=08:05:52
+Train: step=172500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 68/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=08:07:44
+Epoch 68, time/epoch = 566.31, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 68, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 68, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=69/100
+Train: step=173000, BER=0.019944, CE loss=0.1860
+Epoch 0 --> 69/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099722, L_CE=0.185956, Now=08:09:50
+Train: step=173500, BER=0.040011, CE loss=0.1864
+Epoch 0 --> 69/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.100027, L_CE=0.186414, Now=08:11:43
+Train: step=174000, BER=0.059940, CE loss=0.1862
+Epoch 0 --> 69/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.099900, L_CE=0.186173, Now=08:13:35
+Train: step=174500, BER=0.079996, CE loss=0.1863
+Epoch 0 --> 69/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099995, L_CE=0.186289, Now=08:15:27
+Train: step=175000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 69/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=08:17:19
+Epoch 69, time/epoch = 565.38, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 69, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 69, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=70/100
+Train: step=175500, BER=0.019906, CE loss=0.1855
+Epoch 0 --> 70/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099530, L_CE=0.185470, Now=08:19:26
+Train: step=176000, BER=0.039775, CE loss=0.1853
+Epoch 0 --> 70/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099438, L_CE=0.185292, Now=08:21:18
+Train: step=176500, BER=0.059763, CE loss=0.1857
+Epoch 0 --> 70/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099605, L_CE=0.185671, Now=08:23:10
+Train: step=177000, BER=0.079769, CE loss=0.1858
+Epoch 0 --> 70/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099712, L_CE=0.185827, Now=08:25:02
+Train: step=177500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 70/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=08:26:54
+Epoch 70, time/epoch = 565.34, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 70, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 70, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=71/100
+Train: step=178000, BER=0.019943, CE loss=0.1858
+Epoch 0 --> 71/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099716, L_CE=0.185780, Now=08:29:01
+Train: step=178500, BER=0.039882, CE loss=0.1858
+Epoch 0 --> 71/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099706, L_CE=0.185773, Now=08:30:54
+Train: step=179000, BER=0.059918, CE loss=0.1861
+Epoch 0 --> 71/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099864, L_CE=0.186077, Now=08:32:46
+Train: step=179500, BER=0.079878, CE loss=0.1860
+Epoch 0 --> 71/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099848, L_CE=0.186047, Now=08:34:38
+Train: step=180000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 71/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=08:36:30
+Epoch 71, time/epoch = 566.79, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 71, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 71, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=72/100
+Train: step=180500, BER=0.020071, CE loss=0.1869
+Epoch 0 --> 72/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100356, L_CE=0.186921, Now=08:38:25
+Train: step=181000, BER=0.039994, CE loss=0.1862
+Epoch 0 --> 72/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.099986, L_CE=0.186225, Now=08:40:09
+Train: step=181500, BER=0.059759, CE loss=0.1856
+Epoch 0 --> 72/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099599, L_CE=0.185629, Now=08:42:01
+Train: step=182000, BER=0.079755, CE loss=0.1858
+Epoch 0 --> 72/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099693, L_CE=0.185786, Now=08:43:54
+Train: step=182500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 72/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=08:45:46
+Epoch 72, time/epoch = 546.25, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 72, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 72, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=73/100
+Train: step=183000, BER=0.020071, CE loss=0.1869
+Epoch 0 --> 73/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.100354, L_CE=0.186916, Now=08:47:53
+Train: step=183500, BER=0.040114, CE loss=0.1868
+Epoch 0 --> 73/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.100286, L_CE=0.186842, Now=08:49:45
+Train: step=184000, BER=0.060007, CE loss=0.1863
+Epoch 0 --> 73/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.100012, L_CE=0.186327, Now=08:51:37
+Train: step=184500, BER=0.079953, CE loss=0.1862
+Epoch 0 --> 73/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099941, L_CE=0.186220, Now=08:53:29
+Train: step=185000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 73/100, i=2500/2500, -5.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=08:55:22
+Epoch 73, time/epoch = 566.71, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 73, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 73, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=74/100
+Train: step=185500, BER=0.019964, CE loss=0.1859
+Epoch 0 --> 74/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099819, L_CE=0.185869, Now=08:57:28
+Train: step=186000, BER=0.039914, CE loss=0.1859
+Epoch 0 --> 74/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099786, L_CE=0.185884, Now=08:59:20
+Train: step=186500, BER=0.060004, CE loss=0.1863
+Epoch 0 --> 74/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.100007, L_CE=0.186324, Now=09:01:12
+Train: step=187000, BER=0.079929, CE loss=0.1862
+Epoch 0 --> 74/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099911, L_CE=0.186178, Now=09:03:04
+Train: step=187500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 74/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=09:04:55
+Epoch 74, time/epoch = 562.82, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 74, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 74, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=75/100
+Train: step=188000, BER=0.019933, CE loss=0.1857
+Epoch 0 --> 75/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.099667, L_CE=0.185660, Now=09:07:01
+Train: step=188500, BER=0.039869, CE loss=0.1857
+Epoch 0 --> 75/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.099673, L_CE=0.185651, Now=09:08:53
+Train: step=189000, BER=0.059952, CE loss=0.1861
+Epoch 0 --> 75/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099919, L_CE=0.186121, Now=09:10:45
+Train: step=189500, BER=0.079945, CE loss=0.1862
+Epoch 0 --> 75/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099931, L_CE=0.186163, Now=09:12:37
+Train: step=190000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 75/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=09:14:29
+Epoch 75, time/epoch = 564.75, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 75, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 75, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=76/100
+Train: step=190500, BER=0.019910, CE loss=0.1857
+Epoch 0 --> 76/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099551, L_CE=0.185668, Now=09:16:27
+Train: step=191000, BER=0.039892, CE loss=0.1859
+Epoch 0 --> 76/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099730, L_CE=0.185937, Now=09:18:19
+Train: step=191500, BER=0.059859, CE loss=0.1860
+Epoch 0 --> 76/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.099766, L_CE=0.185979, Now=09:20:10
+Train: step=192000, BER=0.079673, CE loss=0.1857
+Epoch 0 --> 76/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099591, L_CE=0.185660, Now=09:22:02
+Train: step=192500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 76/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=09:23:53
+Epoch 76, time/epoch = 554.46, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 76, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 76, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=77/100
+Train: step=193000, BER=0.020072, CE loss=0.1870
+Epoch 0 --> 77/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.100361, L_CE=0.186979, Now=09:26:04
+Train: step=193500, BER=0.039942, CE loss=0.1860
+Epoch 0 --> 77/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.099855, L_CE=0.186002, Now=09:28:00
+Train: step=194000, BER=0.059862, CE loss=0.1859
+Epoch 0 --> 77/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.099771, L_CE=0.185901, Now=09:29:53
+Train: step=194500, BER=0.079824, CE loss=0.1859
+Epoch 0 --> 77/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099779, L_CE=0.185911, Now=09:31:45
+Train: step=195000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 77/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=09:33:39
+Epoch 77, time/epoch = 576.42, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 77, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 77, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=78/100
+Train: step=195500, BER=0.019911, CE loss=0.1855
+Epoch 0 --> 78/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.099555, L_CE=0.185520, Now=09:35:46
+Train: step=196000, BER=0.039866, CE loss=0.1857
+Epoch 0 --> 78/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099666, L_CE=0.185728, Now=09:37:39
+Train: step=196500, BER=0.059842, CE loss=0.1858
+Epoch 0 --> 78/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099737, L_CE=0.185847, Now=09:39:32
+Train: step=197000, BER=0.079889, CE loss=0.1860
+Epoch 0 --> 78/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099861, L_CE=0.186049, Now=09:41:24
+Train: step=197500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 78/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=09:43:17
+Epoch 78, time/epoch = 568.03, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 78, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 78, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=79/100
+Train: step=198000, BER=0.020041, CE loss=0.1866
+Epoch 0 --> 79/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.100205, L_CE=0.186586, Now=09:45:23
+Train: step=198500, BER=0.040039, CE loss=0.1865
+Epoch 0 --> 79/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.100097, L_CE=0.186457, Now=09:47:15
+Train: step=199000, BER=0.059964, CE loss=0.1862
+Epoch 0 --> 79/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099940, L_CE=0.186211, Now=09:49:09
+Train: step=199500, BER=0.079897, CE loss=0.1861
+Epoch 0 --> 79/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099872, L_CE=0.186093, Now=09:51:01
+Train: step=200000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 79/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=09:52:54
+Epoch 79, time/epoch = 567.54, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 79, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 79, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=80/100
+Train: step=200500, BER=0.019979, CE loss=0.1863
+Epoch 0 --> 80/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099895, L_CE=0.186344, Now=09:55:02
+Train: step=201000, BER=0.039880, CE loss=0.1859
+Epoch 0 --> 80/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099699, L_CE=0.185896, Now=09:56:57
+Train: step=201500, BER=0.059899, CE loss=0.1860
+Epoch 0 --> 80/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099831, L_CE=0.186031, Now=09:58:50
+Train: step=202000, BER=0.079861, CE loss=0.1860
+Epoch 0 --> 80/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099826, L_CE=0.186002, Now=10:00:43
+Train: step=202500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 80/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=10:02:38
+Epoch 80, time/epoch = 573.86, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 80, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 80, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=81/100
+Train: step=203000, BER=0.019908, CE loss=0.1855
+Epoch 0 --> 81/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099539, L_CE=0.185499, Now=10:04:40
+Train: step=203500, BER=0.039808, CE loss=0.1855
+Epoch 0 --> 81/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099519, L_CE=0.185482, Now=10:06:33
+Train: step=204000, BER=0.059702, CE loss=0.1854
+Epoch 0 --> 81/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099503, L_CE=0.185405, Now=10:08:26
+Train: step=204500, BER=0.079751, CE loss=0.1858
+Epoch 0 --> 81/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099689, L_CE=0.185772, Now=10:10:18
+Train: step=205000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 81/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=10:12:10
+Epoch 81, time/epoch = 562.76, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 81, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 81, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=82/100
+Train: step=205500, BER=0.020056, CE loss=0.1867
+Epoch 0 --> 82/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100282, L_CE=0.186738, Now=10:14:16
+Train: step=206000, BER=0.039954, CE loss=0.1861
+Epoch 0 --> 82/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.099885, L_CE=0.186080, Now=10:16:08
+Train: step=206500, BER=0.059858, CE loss=0.1859
+Epoch 0 --> 82/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.099763, L_CE=0.185865, Now=10:17:59
+Train: step=207000, BER=0.079847, CE loss=0.1859
+Epoch 0 --> 82/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099808, L_CE=0.185929, Now=10:19:51
+Train: step=207500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 82/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=10:21:44
+Epoch 82, time/epoch = 564.63, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 82, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 82, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=83/100
+Train: step=208000, BER=0.020085, CE loss=0.1870
+Epoch 0 --> 83/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100424, L_CE=0.186985, Now=10:23:52
+Train: step=208500, BER=0.040017, CE loss=0.1863
+Epoch 0 --> 83/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.100043, L_CE=0.186321, Now=10:25:45
+Train: step=209000, BER=0.059863, CE loss=0.1859
+Epoch 0 --> 83/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.099772, L_CE=0.185901, Now=10:27:38
+Train: step=209500, BER=0.079844, CE loss=0.1860
+Epoch 0 --> 83/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099805, L_CE=0.185957, Now=10:29:30
+Train: step=210000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 83/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=10:31:22
+Epoch 83, time/epoch = 568.03, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 83, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 83, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=84/100
+Train: step=210500, BER=0.019923, CE loss=0.1856
+Epoch 0 --> 84/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099613, L_CE=0.185634, Now=10:33:29
+Train: step=211000, BER=0.039869, CE loss=0.1858
+Epoch 0 --> 84/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099673, L_CE=0.185790, Now=10:35:21
+Train: step=211500, BER=0.059947, CE loss=0.1862
+Epoch 0 --> 84/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099911, L_CE=0.186207, Now=10:37:17
+Train: step=212000, BER=0.079922, CE loss=0.1862
+Epoch 0 --> 84/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099903, L_CE=0.186151, Now=10:39:08
+Train: step=212500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 84/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=10:40:59
+Epoch 84, time/epoch = 568.03, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 84, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 84, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=85/100
+Train: step=213000, BER=0.019934, CE loss=0.1857
+Epoch 0 --> 85/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099671, L_CE=0.185712, Now=10:43:05
+Train: step=213500, BER=0.039859, CE loss=0.1857
+Epoch 0 --> 85/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.099647, L_CE=0.185722, Now=10:44:57
+Train: step=214000, BER=0.059922, CE loss=0.1860
+Epoch 0 --> 85/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.099869, L_CE=0.186035, Now=10:46:49
+Train: step=214500, BER=0.079897, CE loss=0.1861
+Epoch 0 --> 85/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099871, L_CE=0.186098, Now=10:48:40
+Train: step=215000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 85/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=10:50:32
+Epoch 85, time/epoch = 563.34, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 85, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 85, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=86/100
+Train: step=215500, BER=0.019896, CE loss=0.1853
+Epoch 0 --> 86/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099481, L_CE=0.185333, Now=10:52:39
+Train: step=216000, BER=0.039869, CE loss=0.1857
+Epoch 0 --> 86/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099672, L_CE=0.185654, Now=10:54:32
+Train: step=216500, BER=0.059849, CE loss=0.1859
+Epoch 0 --> 86/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099749, L_CE=0.185870, Now=10:56:25
+Train: step=217000, BER=0.079823, CE loss=0.1859
+Epoch 0 --> 86/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099779, L_CE=0.185941, Now=10:58:18
+Train: step=217500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 86/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=11:00:11
+Epoch 86, time/epoch = 569.22, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 86, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 86, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=87/100
+Train: step=218000, BER=0.020010, CE loss=0.1864
+Epoch 0 --> 87/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100052, L_CE=0.186404, Now=11:02:18
+Train: step=218500, BER=0.039907, CE loss=0.1859
+Epoch 0 --> 87/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.099769, L_CE=0.185906, Now=11:04:09
+Train: step=219000, BER=0.059937, CE loss=0.1861
+Epoch 0 --> 87/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.099894, L_CE=0.186125, Now=11:06:01
+Train: step=219500, BER=0.079911, CE loss=0.1861
+Epoch 0 --> 87/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099888, L_CE=0.186102, Now=11:07:52
+Train: step=220000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 87/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=11:09:37
+Epoch 87, time/epoch = 555.96, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 87, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 87, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=88/100
+Train: step=220500, BER=0.019917, CE loss=0.1857
+Epoch 0 --> 88/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099585, L_CE=0.185652, Now=11:11:42
+Train: step=221000, BER=0.039848, CE loss=0.1857
+Epoch 0 --> 88/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.099621, L_CE=0.185691, Now=11:13:34
+Train: step=221500, BER=0.059967, CE loss=0.1862
+Epoch 0 --> 88/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.099945, L_CE=0.186164, Now=11:15:27
+Train: step=222000, BER=0.079959, CE loss=0.1862
+Epoch 0 --> 88/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099949, L_CE=0.186214, Now=11:17:19
+Train: step=222500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 88/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=11:19:11
+Epoch 88, time/epoch = 564.27, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 88, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 88, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=89/100
+Train: step=223000, BER=0.019993, CE loss=0.1862
+Epoch 0 --> 89/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099967, L_CE=0.186217, Now=11:21:21
+Train: step=223500, BER=0.039974, CE loss=0.1862
+Epoch 0 --> 89/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099934, L_CE=0.186161, Now=11:23:17
+Train: step=224000, BER=0.059862, CE loss=0.1859
+Epoch 0 --> 89/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099771, L_CE=0.185876, Now=11:25:14
+Train: step=224500, BER=0.079847, CE loss=0.1860
+Epoch 0 --> 89/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099809, L_CE=0.185959, Now=11:27:10
+Train: step=225000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 89/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=11:29:06
+Epoch 89, time/epoch = 586.19, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 89, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 89, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=90/100
+Train: step=225500, BER=0.019988, CE loss=0.1862
+Epoch 0 --> 90/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099941, L_CE=0.186206, Now=11:31:14
+Train: step=226000, BER=0.040013, CE loss=0.1863
+Epoch 0 --> 90/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.100033, L_CE=0.186346, Now=11:33:06
+Train: step=226500, BER=0.060046, CE loss=0.1865
+Epoch 0 --> 90/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.100076, L_CE=0.186468, Now=11:34:54
+Train: step=227000, BER=0.079988, CE loss=0.1863
+Epoch 0 --> 90/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099985, L_CE=0.186295, Now=11:36:46
+Train: step=227500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 90/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=11:38:37
+Epoch 90, time/epoch = 561.08, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 90, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 90, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=91/100
+Train: step=228000, BER=0.020031, CE loss=0.1865
+Epoch 0 --> 91/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.100156, L_CE=0.186512, Now=11:40:44
+Train: step=228500, BER=0.039987, CE loss=0.1863
+Epoch 0 --> 91/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099968, L_CE=0.186342, Now=11:42:36
+Train: step=229000, BER=0.059834, CE loss=0.1859
+Epoch 0 --> 91/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099723, L_CE=0.185920, Now=11:44:27
+Train: step=229500, BER=0.079897, CE loss=0.1861
+Epoch 0 --> 91/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099871, L_CE=0.186096, Now=11:46:19
+Train: step=230000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 91/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=11:48:11
+Epoch 91, time/epoch = 563.79, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 91, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 91, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=92/100
+Train: step=230500, BER=0.020011, CE loss=0.1863
+Epoch 0 --> 92/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100055, L_CE=0.186271, Now=11:50:17
+Train: step=231000, BER=0.039934, CE loss=0.1860
+Epoch 0 --> 92/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099835, L_CE=0.185999, Now=11:52:09
+Train: step=231500, BER=0.059893, CE loss=0.1860
+Epoch 0 --> 92/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099822, L_CE=0.185990, Now=11:54:01
+Train: step=232000, BER=0.079857, CE loss=0.1860
+Epoch 0 --> 92/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099821, L_CE=0.186005, Now=11:55:54
+Train: step=232500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 92/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=11:57:47
+Epoch 92, time/epoch = 566.49, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 92, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 92, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=93/100
+Train: step=233000, BER=0.020016, CE loss=0.1865
+Epoch 0 --> 93/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.100082, L_CE=0.186500, Now=11:59:53
+Train: step=233500, BER=0.040068, CE loss=0.1865
+Epoch 0 --> 93/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.100170, L_CE=0.186519, Now=12:01:46
+Train: step=234000, BER=0.059980, CE loss=0.1862
+Epoch 0 --> 93/100, i=1500/2500, -3.00dB/90Hz, Tr_BER=0.099966, L_CE=0.186154, Now=12:03:39
+Train: step=234500, BER=0.079923, CE loss=0.1861
+Epoch 0 --> 93/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099904, L_CE=0.186070, Now=12:05:32
+Train: step=235000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 93/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=12:07:24
+Epoch 93, time/epoch = 567.28, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 93, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 93, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=94/100
+Train: step=235500, BER=0.019965, CE loss=0.1860
+Epoch 0 --> 94/100, i= 500/2500, -5.00dB/90Hz, Tr_BER=0.099824, L_CE=0.186016, Now=12:09:30
+Train: step=236000, BER=0.039907, CE loss=0.1859
+Epoch 0 --> 94/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099766, L_CE=0.185882, Now=12:11:22
+Train: step=236500, BER=0.059851, CE loss=0.1859
+Epoch 0 --> 94/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099752, L_CE=0.185874, Now=12:13:14
+Train: step=237000, BER=0.079909, CE loss=0.1861
+Epoch 0 --> 94/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099886, L_CE=0.186121, Now=12:15:06
+Train: step=237500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 94/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=12:16:57
+Epoch 94, time/epoch = 563.71, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 94, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 94, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=95/100
+Train: step=238000, BER=0.019990, CE loss=0.1860
+Epoch 0 --> 95/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.099951, L_CE=0.186049, Now=12:19:04
+Train: step=238500, BER=0.039948, CE loss=0.1859
+Epoch 0 --> 95/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099870, L_CE=0.185917, Now=12:20:55
+Train: step=239000, BER=0.059946, CE loss=0.1861
+Epoch 0 --> 95/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099911, L_CE=0.186087, Now=12:22:47
+Train: step=239500, BER=0.079854, CE loss=0.1860
+Epoch 0 --> 95/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099818, L_CE=0.185992, Now=12:24:38
+Train: step=240000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 95/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=12:26:30
+Epoch 95, time/epoch = 563.24, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 95, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 95, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=96/100
+Train: step=240500, BER=0.020005, CE loss=0.1863
+Epoch 0 --> 96/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100023, L_CE=0.186294, Now=12:28:36
+Train: step=241000, BER=0.039976, CE loss=0.1862
+Epoch 0 --> 96/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099940, L_CE=0.186168, Now=12:30:28
+Train: step=241500, BER=0.059902, CE loss=0.1860
+Epoch 0 --> 96/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099837, L_CE=0.186042, Now=12:32:20
+Train: step=242000, BER=0.079848, CE loss=0.1860
+Epoch 0 --> 96/100, i=2000/2500, -3.00dB/90Hz, Tr_BER=0.099810, L_CE=0.185970, Now=12:34:12
+Train: step=242500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 96/100, i=2500/2500, -3.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=12:36:07
+Epoch 96, time/epoch = 567.83, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 96, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 96, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=97/100
+Train: step=243000, BER=0.020007, CE loss=0.1863
+Epoch 0 --> 97/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.100034, L_CE=0.186313, Now=12:38:13
+Train: step=243500, BER=0.039978, CE loss=0.1862
+Epoch 0 --> 97/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099945, L_CE=0.186195, Now=12:40:05
+Train: step=244000, BER=0.060017, CE loss=0.1863
+Epoch 0 --> 97/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.100029, L_CE=0.186314, Now=12:41:57
+Train: step=244500, BER=0.079874, CE loss=0.1860
+Epoch 0 --> 97/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099843, L_CE=0.186026, Now=12:43:51
+Train: step=245000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 97/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=12:45:44
+Epoch 97, time/epoch = 567.40, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 97, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 97, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=98/100
+Train: step=245500, BER=0.019954, CE loss=0.1859
+Epoch 0 --> 98/100, i= 500/2500, -4.00dB/90Hz, Tr_BER=0.099768, L_CE=0.185870, Now=12:47:50
+Train: step=246000, BER=0.039978, CE loss=0.1862
+Epoch 0 --> 98/100, i=1000/2500, -3.00dB/90Hz, Tr_BER=0.099945, L_CE=0.186202, Now=12:49:42
+Train: step=246500, BER=0.059990, CE loss=0.1863
+Epoch 0 --> 98/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099983, L_CE=0.186273, Now=12:51:34
+Train: step=247000, BER=0.079930, CE loss=0.1861
+Epoch 0 --> 98/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099912, L_CE=0.186139, Now=12:53:28
+Train: step=247500, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 98/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=12:55:22
+Epoch 98, time/epoch = 568.61, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 98, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 98, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+Epoch: start 0 --> current/total=99/100
+Train: step=248000, BER=0.019942, CE loss=0.1858
+Epoch 0 --> 99/100, i= 500/2500, -3.00dB/90Hz, Tr_BER=0.099710, L_CE=0.185785, Now=12:57:23
+Train: step=248500, BER=0.039925, CE loss=0.1860
+Epoch 0 --> 99/100, i=1000/2500, -4.00dB/90Hz, Tr_BER=0.099814, L_CE=0.186002, Now=12:59:14
+Train: step=249000, BER=0.059959, CE loss=0.1862
+Epoch 0 --> 99/100, i=1500/2500, -4.00dB/90Hz, Tr_BER=0.099932, L_CE=0.186213, Now=13:01:06
+Train: step=249500, BER=0.079909, CE loss=0.1861
+Epoch 0 --> 99/100, i=2000/2500, -4.00dB/90Hz, Tr_BER=0.099887, L_CE=0.186119, Now=13:02:58
+Train: step=250000, BER=0.099850, CE loss=0.1861
+Epoch 0 --> 99/100, i=2500/2500, -4.00dB/90Hz, Tr_BER=0.099850, L_CE=0.186051, Now=13:04:50
+Epoch 99, time/epoch = 558.70, epoch_loss = 0.000620
+Phase: valid Old EVA *******************
+Epoch 99, old EVA, BER=0.059426, epoch_loss = 0.134914
+Phase: valid new EVA *******************
+Epoch 99, New EVA, BER=0.073288, epoch_loss = 0.164033
+	Old EVA (BER) 	 New EVA (BER) 	 Old EVA (Loss) 	 New EVA (Loss)
+	0.059426, 	0.073288, 	0.134914, 	0.164033
+
+--->--->--->--->--->--->--->--->--->--->Save CKP99
+[*] Finish!
